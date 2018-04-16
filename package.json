@@ -1,9 +1,10 @@
 {
-  "homepage": "https://bethmq.github.io/",
+  "homepage": "https://bethmq.github.io/treelearning",
   "name": "binary-tree-traversal",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
     "prop-types": "^15.6.1",
@@ -17,6 +18,8 @@
     "build-css": "node-sass-chokidar --include-path ./src src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
