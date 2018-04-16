@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: "Helvetica", sans-serif;
+   	background-image:url(/img/trees.jpeg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.image {
+	padding: 10px;
+}
+
+.treewelcome {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -120%);
+	background:rgba(25,44,16,0.95);
+	border-radius: 15px;
+	padding: 40px;
+}
+
+.bulkinformation {
+	position: absolute;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	background:rgba(61,29,19, 0.99);
+	border-radius: 15px;
+	padding: 40px;
+	width: 1500px;
+	margin-bottom: 40px;
+	padding-bottom: 100px;
+	transform: translate(0px, 120px);
+}
+
+h1 {
+	color: White;
+	font-size: 60px;
+	text-align: center;
+}
+
+h2 {
+	color: White;
+	font-size: 40px;
+	text-align: center;
+	padding: 10px;
+}
+
+h3 {
+	color: White;
+	font-size: 30px;
+	text-align: left;
+	padding: 10px;
+}
+
+h4 {
+	color: White;
+	font-size: 25px;
+	text-align: left;
+	padding: 10px;
+}
+
+p {
+	color: White;
+	font-size: 20px;
+	text-align: left;
+	padding: 10px;
+}
+
+p.solidBorder {
+	border-style: solid;
+	border-color: #121D3D;
+	border-width: 5px;
+}
+
+ul.discBullets {
+	list-style-type:disc;
+	color: White;
+	font-size: 20px;
+	padding: 10px;
+}
+
+#centered {
+	color: White;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+#centeredLarge {
+	color: White;
+	font-size: 30px;
+	text-align: center;
+	padding: 10px;
+	margin-top: 25px;
+}
+
+.button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -5%);
+}
+
+.buttonGreen {
+	position: relative;
+	transform: translate(45%, 160%);
+}
+
+.btn {
+	border: 1px solid white;
+	border-radius: 15px;
+	text-transform: uppercase;
+	padding: 20px 30px;
+	color: white;
+	background:rgba(61,29,19,0.9);
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 16px;
+	font-family: "Helvetica", sans-serif;
+}
+
+.btnGreen {
+	border: 1px solid white;
+	border-radius: 15px;
+	text-transform: uppercase;
+	padding: 20px 30px;
+	color: white;
+	background:rgba(25,44,16,0.5);
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 16px;
+	font-family: "Helvetica", sans-serif;
+
+	&[disabled] {
+		background: grey;
+
+		&:hover {
+			background: grey;
+		}
+	}
+}
+
+.btn:hover {
+	background:rgba(61,29,19,1);
+	transition: all 0.2s ease-in;
+}
+
+.btnGreen:hover {
+	background:rgba(25,44,16,1);
+	transition: all 0.2s ease-in;
+}

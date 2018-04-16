@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Helvetica", sans-serif;
+  background-image: url(/img/trees.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.image {
+  padding: 10px; }
+
+.treewelcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  background: rgba(25, 44, 16, 0.95);
+  border-radius: 15px;
+  padding: 40px; }
+
+.bulkinformation {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: rgba(61, 29, 19, 0.99);
+  border-radius: 15px;
+  padding: 40px;
+  width: 1500px;
+  margin-bottom: 40px;
+  padding-bottom: 100px;
+  transform: translate(0px, 120px); }
+
+h1 {
+  color: White;
+  font-size: 60px;
+  text-align: center; }
+
+h2 {
+  color: White;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px; }
+
+h3 {
+  color: White;
+  font-size: 30px;
+  text-align: left;
+  padding: 10px; }
+
+h4 {
+  color: White;
+  font-size: 25px;
+  text-align: left;
+  padding: 10px; }
+
+p {
+  color: White;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px; }
+
+p.solidBorder {
+  border-style: solid;
+  border-color: #121D3D;
+  border-width: 5px; }
+
+ul.discBullets {
+  list-style-type: disc;
+  color: White;
+  font-size: 20px;
+  padding: 10px; }
+
+#centered {
+  color: White;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px; }
+
+#centeredLarge {
+  color: White;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 25px; }
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -5%); }
+
+.buttonGreen {
+  position: relative;
+  transform: translate(45%, 160%); }
+
+.btn {
+  border: 1px solid white;
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  color: white;
+  background: rgba(61, 29, 19, 0.9);
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 16px;
+  font-family: "Helvetica", sans-serif; }
+
+.btnGreen {
+  border: 1px solid white;
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  color: white;
+  background: rgba(25, 44, 16, 0.5);
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 16px;
+  font-family: "Helvetica", sans-serif; }
+  .btnGreen[disabled] {
+    background: grey; }
+    .btnGreen[disabled]:hover {
+      background: grey; }
+
+.btn:hover {
+  background: #3d1d13;
+  transition: all 0.2s ease-in; }
+
+.btnGreen:hover {
+  background: #192c10;
+  transition: all 0.2s ease-in; }
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+  margin-right: 30px; }
+  .main-nav li {
+    display: inline-block; }
+    .main-nav li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 20px;
+      font-family: "Helvetica", sans-serif;
+      font-size: 18px; }
+      .main-nav li a.active {
+        border: 1px solid white; }
+      .main-nav li a:hover {
+        border: 1px solid white; }
+
+.activity {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: rgba(61, 29, 19, 0.99);
+  border-radius: 15px;
+  padding: 40px;
+  width: 1500px;
+  margin-bottom: 40px;
+  transform: translate(0px, 120px);
+  display: flex;
+  color: white; }
+  .activity .tree-wrapper {
+    width: 100%;
+    height: 500px; }
+    .activity .tree-wrapper circle {
+      fill: green; }
+      .activity .tree-wrapper circle.active-node {
+        fill: red; }
+  .activity .error-message {
+    color: red;
+    font-size: 10px; }
+  .activity .activity-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center; }
+    .activity .activity-header .activity-form {
+      font-size: 20px; }
+      .activity .activity-header .activity-form input {
+        margin: 20px auto;
+        height: 60px;
+        font-size: 30px;
+        padding-left: 22px;
+        width: 40px;
+        border-radius: 6px;
+        display: block; }
+    .activity .activity-header .activity-test {
+      margin-top: 20px; }
+      .activity .activity-header .activity-test .activity-select {
+        height: 40px;
+        font-size: 20px; }
+      .activity .activity-header .activity-test button {
+        margin-top: 20px; }
+      .activity .activity-header .activity-test .activity-result-message {
+        margin-top: 20px;
+        font-size: 20px; }
+      .activity .activity-header .activity-test .activity-order {
+        margin-top: 10px;
+        font-size: 20px; }
+        .activity .activity-header .activity-test .activity-order span {
+          padding: 0 5px; }
+  .activity svg text {
+    pointer-events: none; }
